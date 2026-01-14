@@ -1,4 +1,5 @@
-# USER STORIES – DevOps CI/CD Project
+# USER STORIES – DevOps CI/CD Project i  have 
+#Last update: Project planning validated.
 
 ## Project Context
 Implementation of a DevOps CI/CD pipeline for a containerized web application deployed using GitLab CI/CD.
