@@ -1,19 +1,18 @@
 FROM python:3.11-slim
 
-# Crée le dossier de travail
 WORKDIR /app
 
-# Copier uniquement les requirements pour profiter du cache Docker
+# Copier requirements
 COPY src/requirements.txt /app/
 
-# Installer les dépendances
+# Installer dépendances
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copier le reste du code
+# Copier le code
 COPY src/ /app/
 
-# Exposer le port si nécessaire
+# Exposer le port Flask
 EXPOSE 5000
 
-# Commande par défaut
+# Lancer l’application
 CMD ["python", "app.py"]
