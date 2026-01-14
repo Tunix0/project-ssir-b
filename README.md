@@ -1,4 +1,5 @@
 # PROJECT-SSIR-B
+![CI Pipeline](https://gitlab.com/mortadhatlili53/project-ssir-b/badges/develop/pipeline.svg)
 
 
 
