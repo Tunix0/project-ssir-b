@@ -1,20 +1,10 @@
-# Base image
-FROM node:20-alpine
+FROM python:3.11-slim
 
-# Working directory
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+COPY src/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install dependencies
-RUN npm install
+COPY src/ .
 
-# Copy source code
-COPY src/ ./src/
-
-# Expose port
-EXPOSE 5000
-
-# Command
-CMD ["node", "src/index.js"]
+CMD ["python", "app.py"]
