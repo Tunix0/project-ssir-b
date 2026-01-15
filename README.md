@@ -1,4 +1,4 @@
-# Kanban Board – DevOps Project
+## – DevOps Project Tekup Mortadha Tlili SSIR-S B
 
 ## Project Description
 This project is a **Kanban Board web application** developed as part of a DevOps course project.
@@ -20,7 +20,7 @@ The application allows users to visualize tasks using a Kanban workflow (To Do, 
 
 ---
 
-## 🏗 Architecture
+## Architecture
 The application follows a containerized architecture deployed on the cloud.
 
  **High-level architecture:**
